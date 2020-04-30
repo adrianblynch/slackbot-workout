@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
     "co": "4.6.0",
     "lodash": "4.17.4",
     "moment": "2.18.1",
-    "slack": "8.3.1"
-  }
+    "slack": "8.3.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
